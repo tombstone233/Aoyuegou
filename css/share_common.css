@@ -1,0 +1,21 @@
+.share{
+    width: 800px;
+    height: 80px;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 5px auto;
+}
+.share_title a{
+    color: #FC990E;
+}
+.time{
+    color: #666666;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+}
+.share_content{
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 20px;
+}

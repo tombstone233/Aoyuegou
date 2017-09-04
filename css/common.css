@@ -75,7 +75,8 @@
 .fill{
     width: 1200px;
     margin: 20px auto;
-    min-height: 800px;
+    min-height: 1200px;
+    overflow: hidden;
 }
 .content_left{
     width: 240px;
