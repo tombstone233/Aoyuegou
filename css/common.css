@@ -72,6 +72,11 @@
     color: #636363;
     margin-left: 5px;
 }
+.fill{
+    width: 1200px;
+    margin: 20px auto;
+    min-height: 800px;
+}
 .content_left{
     width: 240px;
     float: left;
@@ -119,6 +124,9 @@
 .list_title ul li a:hover {
     background-color: #F4F4F4;
     color: #606060;
+}
+.list_content{
+    margin-bottom: 15px;
 }
 .list_content ul li a{
     color: #606060;
