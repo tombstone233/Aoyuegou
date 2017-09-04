@@ -1,0 +1,134 @@
+.top{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.nav{
+    width: 1200px;
+    height: 50px;
+    background-color: rgb(174,97,7);
+}
+.nav ul li{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.nav ul li a span{
+    width: 105px;
+    height: 50px;
+    display: inline-block;
+    color: rgb(255,255,255);
+}
+.nav ul li:hover span{
+    background-color: rgb(255,255,255);
+    color:rgb(251,161,17);
+}
+.show{
+    display: none;
+    position: absolute;
+    width: 105px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.nav ul li:hover .show{
+    display: block;
+}
+.show a{
+    display: block;
+    font-size: 14px;
+    color: rgb(251,161,17);
+}
+.show a:hover{
+    color: rgb(255,255,255);
+    background-color: rgb(174,97,7);
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer_top{
+    margin: 0 auto;
+    width: 600px;
+    height: 20px;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer ul li a{
+    color: #636363;
+    font-size: 12px;
+}
+.footer p{
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #636363;
+}
+.footer p a{
+    margin: 5px 0;
+    font-size: 12px;
+    color: #636363;
+    margin-left: 5px;
+}
+.content_left{
+    width: 240px;
+    float: left;
+}
+.content_right{
+    width: 930px;
+    float: left;
+    min-height: 800px;
+    border-left: 1px solid #CCCCCC;
+}
+.content_right_title{
+    border-bottom: 1px solid #CCCCCC;
+    min-height: 40px;
+}
+.content_right_title p{
+    margin-left: 10px;
+    line-height: 50px;
+    font-size: 15px;
+    color: #6a6a6a;
+}
+.content_right_title p a{
+    color: #6a6a6a;
+}
+.them{
+    text-align: center;
+}
+.title{
+    height: 30px;
+    font-size: 22px;
+    margin-left: 30px;
+    color: #606060;
+}
+.title span{
+    font-size: 16px;
+}
+.list{
+    margin-top: 10px;
+}
+.list_title ul li a{
+    background-color: #FB9B10;
+}
+.list_title ul li a{
+    color: #fff;
+}
+.list_title ul li a:hover {
+    background-color: #F4F4F4;
+    color: #606060;
+}
+.list_content ul li a{
+    color: #606060;
+    font-size: 14px;
+}
+.list_title ul li a,.list_content ul li a{
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
