@@ -114,6 +114,9 @@
     font-size: 14px;
     line-height: 14px;
 }
+#content{
+    text-align: left;
+}
 .content_right_title p{
     margin-left: 10px;
     line-height: 50px;
@@ -124,7 +127,7 @@
     color: #6a6a6a;
 }
 .them{
-    text-align: center;
+    text-align: left;
 }
 .title{
     height: 30px;
