@@ -1,0 +1,16 @@
+#name{
+    margin-left: 100px;
+    width: 120px;
+}
+#content{
+    margin-left: 73px;
+    width: 650px;
+    height: 250px;
+    vertical-align: middle;
+}
+.input{
+    margin-left: 85px;
+}
+#code{
+    margin-left: 5px;
+}

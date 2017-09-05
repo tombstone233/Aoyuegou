@@ -1,0 +1,8 @@
+.left,.right{
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.left p,.right p{
+    text-align: left;
+}
