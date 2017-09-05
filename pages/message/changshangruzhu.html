@@ -121,26 +121,39 @@
     <!--右侧内容部分-->
     <div class="content_right">
         <div class="content_right_title">
-            <p>您的位置：<a href="../index.html">网站首页</a>>联系我们</p>
+            <p id="content">您的位置：<a href="../index.html">网站首页</a>>联系我们</p>
             <p class="them" style="color: #FB9B10">厂商入驻申请</p>
-            <form>
-                <div class="left">
-                    <p>留言事项：
-                        <select name="ctext1" >
-                        <option value="厂商入驻申请">厂商入驻申请</option>
-                        </select>
-                    </p>
-                    <p>联系人：<input type="text"></p>
-                    <p>手 机：<input type="text"></p>
-                    <p>Q Q：<input type="text"></p>
-                    <p>联系地址：<input type="text"></p>
-                    <p>公司名称：<input type="text"></p>
-                </div>
-                <div class="right">
-                    <p>座机：<input type="text"></p>
-                </div>
-            </form>
         </div>
+        <form>
+            <div class="center">
+                <div class="left">
+                <p><label>留言事项：</label>
+                    <select name="ctext1" class="text">
+                        <option value="厂商入驻申请">厂商入驻申请</option>
+                    </select>
+                </p>
+                <p><label>联系人：</label><input type="text"></p>
+                <p><label>手 机：</label><input type="text"></p>
+                <p><label>Q Q：</label><input type="text"></p>
+                <p><label>联系地址：</label><input type="text"></p>
+                <p><label>公司名称：</label><input type="text"></p>
+            </div>
+                <div class="right">
+                    <p><label>座机：</label><input type="text"></p>
+                    <p><label>性别：</label><select name="text3" class="text"><option value="先生">先生</option><option value="女士">女士</option></select></p>
+                    <p><label>传真：</label><input type="text"></p>
+                    <p><label>电子邮箱：</label><input type="text"></p>
+                    <p><label>邮政编码：</label><input type="text"></p>
+                    <p><label>公司网址：</label><input type="text"></p>
+                </div>
+            </div>
+
+            <div class="center">
+                <p><label>信息内容：</label><textarea class="text"></textarea></p>
+                <p><label>验证码：</label><input type="text" class="text" /><span id="code" class="nocode">验证码</span></p>
+                <p><button id="check">提交</button></p>
+            </div>
+        </form>
     </div>
     <!--右侧内容部分结束-->
 </div>
@@ -160,7 +173,7 @@
         </ul>
     </div>
     <p>Copyright @ 2013-2017 Equnet.com.cn All Rights Reserved. 奥跃购</p>
-    <p>版权所有 ：江西奥跃购企业管理有限公司 赣ICP备123456号<a href="javascript:void (0)">奥跃购加盟</a></p>
+    <p>版权所有 ：江西奥跃购企业管理有限公司 赣ICP备17011353号<a href="javascript:void (0)">奥跃购加盟</a></p>
 </div>
 <!--底部结束-->
 </body>

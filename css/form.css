@@ -1,8 +1,37 @@
 .left,.right{
     width: 400px;
     float: left;
-    margin-left: 20px;
 }
 .left p,.right p{
     text-align: left;
+    line-height: 50px;
+}
+.left label,.right label,.center label{
+    width: 5em;
+    display: inline-block;
+}
+.left input,.right input{
+    width: 224px;
+    height: 20px;
+    margin-left: 15px;
+}
+.text{
+    margin-left: 15px;
+}
+.center{
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+}
+.center p{
+    line-height: 50px;
+    text-align: left;
+}
+.center p textarea{
+    vertical-align: middle;
+    width: 504px;
+    height: 102px;
+}
+#code{
+    margin-left: 5px;
 }
