@@ -15,7 +15,7 @@
     height: 20px;
     margin-left: 15px;
 }
-.text{
+.text1{
     margin-left: 15px;
 }
 .center{
@@ -31,6 +31,7 @@
     vertical-align: middle;
     width: 504px;
     height: 102px;
+    margin-left: 15px;
 }
 #code{
     margin-left: 5px;

@@ -1,39 +1,15 @@
-.hot{
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 180px;
-}
-.hot_title{
-    border-bottom: 2px solid #FC990E;
-}
-.hot_title p{
-    color: #FC990E;
-    font-size: 18px;
-}
-.hot_list{
-    overflow: hidden;
-}
-.hot_list ol li{
-    list-style: decimal;
-    margin: 4px 0;
-}
-.hot_list ol li a{
-    color: #6a6a6a;
-    font-size: 14px;
-    text-align: left;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
 .news_content{
     border-bottom: 1px solid #CCCCCC;
     width: 880px;
     height: 160px;
     margin: 5px auto;
 }
+.news_content a:first-child{
+    display: block;
+    float: left;
+}
 .news_content img{
     width: 200px;
-    float:left;
 }
 .news_content_title{
     width: 600px;

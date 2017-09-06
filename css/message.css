@@ -2,7 +2,7 @@
     margin-left: 100px;
     width: 120px;
 }
-#content{
+#text{
     margin-left: 73px;
     width: 650px;
     height: 250px;
@@ -13,4 +13,7 @@
 }
 #code{
     margin-left: 5px;
+}
+#form p{
+    text-align: left;
 }
