@@ -50,7 +50,6 @@
 }
 .footer_top{
     margin: 0 auto;
-    width: 600px;
     height: 20px;
 }
 .footer ul li{
@@ -61,13 +60,13 @@
     color: #636363;
     font-size: 12px;
 }
-.footer p{
+.footer div{
     margin: 5px 0;
     font-size: 12px;
     text-align: center;
     color: #636363;
 }
-.footer p a{
+.footer div a{
     margin: 5px 0;
     font-size: 12px;
     color: #636363;
