@@ -1,154 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>联系我们</title>
-    <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/picture.css">
+    <style type="text/css">
+        body,
+        div,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        dl,
+        dt,
+        dd,
+        li,
+        input,
+        textarea,
+        a,
+        form {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+
+        img {
+            border: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .top {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(174, 97, 7);
+            margin: 0 auto;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            padding: 0 20px;
+        }
+
+        .nav ul li a span {
+            width: 125px;
+            height: 50px;
+            display: inline-block;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav ul li:hover span {
+            background-color: rgb(255, 255, 255);
+            color: rgb(251, 161, 17);
+        }
+
+        .show {
+            display: none;
+            position: absolute;
+            width: 125px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .nav ul li:hover .show {
+            display: block;
+        }
+
+        .show a {
+            display: block;
+            font-size: 14px;
+            color: rgb(251, 161, 17);
+        }
+
+        .show a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(174, 97, 7);
+        }
+
+        .footer {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer_top {
+            margin: 0 auto;
+            height: 20px;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer ul li a {
+            color: #636363;
+            font-size: 12px;
+        }
+
+        .footer div {
+            margin: 5px 0;
+            font-size: 12px;
+            text-align: center;
+            color: #636363;
+        }
+
+        .footer div a {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #636363;
+            margin-left: 5px;
+        }
+
+        .content {
+            width: 100%;
+            text-align: center;
+            color: #666666;
+        }
+
+        .link p {
+            width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 30px;
+        }
+
+        .link p a {
+            color: #666666;
+        }
+
+        .iw_poi_title {
+            color: #CC5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word
+        }
+        .picture img{
+            width: 600px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
+
 <body>
-<!--顶部-->
-<div class="top">
-    <div><img src="../../images/nav.jpg" width="1200"></div>
-    <div class="nav">
-        <ul>
-            <li><a href="../../index.html"><span>首页</span></a></li>
-            <li>
-                <a href="../../pages/zoujinaoyuegou.html"><span>走进奥跃购</span></a>
-                <div class="show">
-                    <a href="../../pages/about.html">关于我们</a>
-                    <a href="../../pages/qixiapinpai.html">旗下品牌</a>
-                    <a href="../../pages/xingxiangfeicai.html">形象风采</a>
-                </div>
-            </li>
-            <li>
-                <a href="../../pages/news/news.html"><span>新闻中心</span></a>
-                <div class="show">
-                    <a href="../../pages/news/news01.html">公司动态</a>
-                </div>
-            </li>
-            <li>
-                <a href="../../pages/cooperation/cooperation.html"><span>合作指南</span></a>
-                <div class="show">
-                    <a href="../../pages/cooperation/yunyingshang.html">运营商方案</a>
-                    <a href="../../pages/cooperation/gongyingshang.html">供应商方案</a>
-                    <a href="../../pages/cooperation/pinpaidian.html">品牌店方案</a>
-                </div>
-            </li>
-            <li>
-                <a href="../../pages/share/share.html"><span>合作分享</span></a>
-                <div class="show">
-                    <a href="../../pages/share/share01.html">供应商分享</a>
-                    <a href="../../pages/share/share02.html">运营商分享</a>
-                    <a href="../../pages/share/share03.html">品牌店分享</a>
-                    <a href="../../pages/share/share04.html">会员店分享</a>
-                    <a href="../../pages/share/share05.html">消费者体验</a>
-                </div>
-            </li>
-            <li><a href="../../index.html"><span>订货指南</span></a></li>
-            <li>
-                <a href="../../pages/college/college.html"><span>奥跃购学院</span></a>
-                <div class="show">
-                    <a href="../../pages/college/college01.html">经营智慧</a>
-                    <a href="../../pages/college/college02.html">创业智慧</a>
-                    <a href="../../pages/college/college03.html">精品课程</a>
-                    <a href="../../pages/college/college04.html">学院动态</a>
-                </div>
-            </li>
-            <li>
-                <a href="../../pages/message/lianxiwomen.html"><span>联系我们</span></a>
-                <div class="show">
-                    <a href="../../pages/message/zhaopin.html">招纳贤士</a>
-                    <a href="../../pages/message/message.html">在线留言</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<!--顶部结束-->
-<!--内容部分-->
-<div class="fill">
-    <!--左侧导航部分-->
-    <div class="content_left">
-        <div class="list">
-            <div class="list_title">
-                <ul>
-                    <li><a href="../message/lianxiwomen.html">联系我们</a></li>
-                </ul>
-            </div>
-            <div class="list_title">
-                <ul>
-                    <li><a href="../message/zhaopin.html">招纳贤士</a></li>
-                </ul>
-            </div>
-            <div class="list_content">
-                <ul>
-                    <li><a href="../message/zhaopin.html">招商经理</a></li>
-                    <li><a href="../message/zhaopin.html">运营经理</a></li>
-                    <li><a href="../message/zhaopin.html">文案专员</a></li>
-                    <li><a href="../message/zhaopin.html">网站客服</a></li>
-                    <li><a href="../message/zhaopin.html">网站编辑</a></li>
-                    <li><a href="../message/zhaopin.html">网络推广</a></li>
-                    <li><a href="../message/zhaopin.html">网络推广经理</a></li>
-                    <li><a href="../message/zhaopin.html">市场督导</a></li>
-                    <li><a href="../message/zhaopin.html">商品专员</a></li>
-                    <li><a href="../message/zhaopin.html">商品经理</a></li>
-                </ul>
-            </div>
-            <div class="list_title">
-                <ul>
-                    <li><a href="../message/message.html">在线留言</a></li>
-                </ul>
-            </div>
-            <div class="list_content">
-                <ul>
-                    <li><a href="../message/changshangruzhu.html">厂商入驻申请</a></li>
-                    <li><a href="../message/pinpaikaidian.html">品牌开店申请</a></li>
-                    <li><a href="../message/yunyindaili.html">运营代理申请</a></li>
-                    <li><a href="../message/qitazixun.html">其他咨询留言</a></li>
-                </ul>
-            </div>
+    <!--顶部-->
+    <div class="top">
+        <div><img src="../../images/nav.jpg" width="1200"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="../../index.html"><span>首页</span></a></li>
+                <li>
+                    <a href="../../pages/zoujinaoyuegou.html"><span>走进奥跃购</span></a>
+                    <div class="show">
+                        <a href="../../pages/about.html">关于我们</a>
+                        <a href="../../pages/qixiapinpai.html">旗下品牌</a>
+                        <a href="../../pages/xingxiangfeicai.html">形象风采</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../../pages/news/news.html"><span>新闻中心</span></a>
+                    <div class="show">
+                        <a href="../../pages/news/news01.html">公司动态</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../../pages/cooperation/cooperation.html"><span>合作指南</span></a>
+                    <div class="show">
+                        <a href="../../pages/cooperation/yunyingshang.html">运营商方案</a>
+                        <a href="../../pages/cooperation/gongyingshang.html">供应商方案</a>
+                        <a href="../../pages/cooperation/pinpaidian.html">品牌店方案</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../../pages/share/share.html"><span>合作分享</span></a>
+                    <div class="show">
+                        <a href="../../pages/share/share01.html">供应商分享</a>
+                        <a href="../../pages/share/share02.html">运营商分享</a>
+                        <a href="../../pages/share/share03.html">品牌店分享</a>
+                        <a href="../../pages/share/share04.html">会员店分享</a>
+                        <a href="../../pages/share/share05.html">消费者体验</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../../pages/college/college.html"><span>奥跃购学院</span></a>
+                    <div class="show">
+                        <a href="../../pages/college/college01.html">经营智慧</a>
+                        <a href="../../pages/college/college02.html">创业智慧</a>
+                        <a href="../../pages/college/college03.html">精品课程</a>
+                        <a href="../../pages/college/college04.html">学院动态</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../../pages/message/lianxiwomen.html"><span>联系我们</span></a>
+                    <div class="show">
+                        <a href="../../pages/message/zhaopin.html">招纳贤士</a>
+                        <a href="../../pages/message/message.html">在线留言</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--左侧导航部分结束-->
-    <div class="content_right">
-        <div class="content_right_title">
-            <p id="content">您的位置：<a href="../../index.html">网站首页</a>>联系我们</p>
-            <p class="them" style="color: #FB9B10">联系我们</p>
+    <!--顶部结束-->
+    <!-- 内容部分 -->
+    <div class="content">
+        <!-- 公司形象 -->
+        <div class="picture">
+            <p style="margin:10px 0;">公司形象</p>
+            <img src="../../images/test.jpg">
+            <img src="../../images/test.jpg">
+            <img src="../../images/test.jpg">
         </div>
-        <img src="../../images/test.jpg">
-        <img src="../../images/test.jpg">
-        <img src="../../images/test.jpg">
+        <!-- 公司形象结束 -->
+        <!-- 地图 -->
+        <!--百度地图容器-->
+        <div style="width:697px;height:550px;border:#ccc solid 1px; margin:20px auto;" id="dituContent"></div>
+        <!-- 地图结束 -->
+        <!-- 公司信息 -->
         <div class="link">
-            <p><strong>电话：</strong></p>
-            <p>020-62852886 转0 020-62852897 020-62852886</p>
+            <p><strong>电话：</strong>020-62852886 转0 020-62852897 020-62852886</p>
             <p><strong>免费热线：</strong>400-6040806</p>
             <p><strong>传真：</strong>020-62852880</p>
             <p><strong>网址：</strong><a href="http://www.aoyugo.com">www.aoyugo.com</a></p>
             <p><strong>地址：</strong>南昌市红谷滩新区万达中心B座</p>
         </div>
+        <!-- 公司信息结束 -->
     </div>
-    <!--右侧内容部分结束-->
-</div>
-<!--内容部分结束-->
-<!--底部-->
-<div class="footer">
-    <div class="footer_top">
-        <ul>
-            <li><a href="../../index.html">首页</a></li>
-            <li><a href="../../pages/zoujinaoyuegou.html">走进奥跃购</a></li>
-            <li><a href="../../pages/news/news.html">新闻中心</a></li>
-            <li><a href="../../pages/cooperation/cooperation.html">合作指南</a></li>
-            <li><a href="javascript:void (0)">商品展示</a></li>
-            <li><a href="../../pages/college/college.html">奥跃购学院</a></li>
-            <li><a href="../../pages/message/lianxiwomen.html">联系我们</a></li>
-            <li><a href="../../index.html">奥跃购加盟</a></li>
-        </ul>
+    <!-- 内容部分结束 -->
+    <!--底部-->
+    <div class="footer">
+        <div class="footer_top">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="../pages/zoujinaoyuegou.html">走进奥跃购</a></li>
+                <li><a href="../pages/news/news.html">新闻中心</a></li>
+                <li><a href="../pages/cooperation/cooperation.html">合作指南</a></li>
+                <li><a href="../pages/product/product.html">商品展示</a></li>
+                <li><a href="../pages/college/college.html">奥跃购学院</a></li>
+                <li><a href="../pages/message/lianxiwomen.html">联系我们</a></li>
+                <li><a href="index.html">奥跃购加盟</a></li>
+            </ul>
+        </div>
+        <div>Copyright @ 2013-2017 Equnet.com.cn All Rights Reserved. 奥跃购</div>
+        <div>版权所有 ：江西奥跃购企业管理有限公司 赣ICP备17011353号<a href="index.html">奥跃购加盟</a></div>
     </div>
-    <p>Copyright @ 2013-2017 Equnet.com.cn All Rights Reserved. 奥跃购</p>
-    <p>版权所有 ：江西奥跃购企业管理有限公司 赣ICP备17011353号<a href="../../index.html">奥跃购加盟</a></p>
-</div>
-<!--底部结束-->
+    <!--底部结束-->
 </body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap(); //创建地图
+        setMapEvent(); //设置地图事件
+        addMapControl(); //向地图添加控件
+        addMarker(); //向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+        var point = new BMap.Point(115.858324, 28.701027); //定义一个中心点坐标
+        map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map; //将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+        map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard(); //启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen: 1
+        });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({
+            anchor: BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{
+        title: "江西奥跃购企业管理有限公司",
+        content: "我的备注",
+        point: "115.857076|28.701914",
+        isOpen: 0,
+        icon: {
+            w: 21,
+            h: 21,
+            l: 0,
+            t: 0,
+            x: 6,
+            lb: 5
+        }
+    }];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {
+                icon: iconImg
+            });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {
+                "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+            });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title +
+            "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+            imageOffset: new BMap.Size(-json.l, -json.t),
+            infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+            offset: new BMap.Size(json.x, json.h)
+        })
+        return icon;
+    }
+
+    initMap(); //创建和初始化地图
+</script>
+
 </html>
