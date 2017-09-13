@@ -37,16 +37,4 @@ function switch5() {
     document.getElementById("show5").style.display="block";
 }
 $(function () {
-    $("#right1").mousemove(function () {
-        $("#left1").attr("src","images/jt.2.jpg");
-        $("#right1").attr("src","images/jt.R2.jpg");
-        $("#brand1").fadeOut();
-        $("#brand2").fadeIn();
-    });
-    $("#left1").mousemove(function () {
-        $("#left1").attr("src","images/jt.1.jpg");
-        $("#right1").attr("src","images/jt.R1.jpg");
-        $("#brand2").fadeOut();
-        $("#brand1").fadeIn();
-    });
 });
